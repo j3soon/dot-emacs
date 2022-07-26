@@ -98,3 +98,7 @@ Potential Improvements (Single `q` to quit): https://www.mail-archive.com/emacs-
 ```sh
 emacs --debug-init
 ```
+
+## Potential Improvement References
+
+- [Org Mode - Organize Your Life In Plain Text!](http://doc.norang.ca/org-mode.html)
