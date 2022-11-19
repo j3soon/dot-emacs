@@ -78,6 +78,12 @@
     ((org-agenda-sorting-strategy '(scheduled-up))
       (org-agenda-overriding-columns-format "%15ITEM %SCHEDULED %DEADLINE %TIMESTAMP")
       (org-agenda-view-columns-initially t)))
+    ;; Show TODO/NEXT tasks with effort with C-c a f
+    ("f" "Sort by effort" tags "+EFFORT={.+}/!+TODO|+NEXT|+WAITING"
+    ;; Sort by ascending effort
+    ((org-agenda-sorting-strategy '(effort-up))
+      (org-agenda-overriding-columns-format "%30ITEM %EFFORT %DEADLINE %TIMESTAMP %SCHEDULED")
+      (org-agenda-view-columns-initially t)))
     ;; Show TODO/NEXT tasks with timestamp with C-c a c
     ("c" "Sort by timestamp" tags "+TIMESTAMP={.+}/!+TODO|+NEXT|+WAITING"
     ;; Sort by ascending timestamp

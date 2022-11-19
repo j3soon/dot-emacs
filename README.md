@@ -84,6 +84,10 @@ Ref: https://www.gnu.org/software/emacs/manual/html_node/org/Closing-items.html
 ### [Custom Agenda Commands](custom-orgmode-agenda-commands.el)
 
 Show `TODO`/`NEXT` tasks with deadline/schedule/timestamps (ascending order)
+- `C-c a d`: Deadline mode
+- `C-c a s`: Schedule mode
+- `C-c a f`: Effort mode
+- `C-c a c`: Timestamp mode
 
 Ref: https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html
 
