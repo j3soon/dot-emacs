@@ -34,6 +34,7 @@ Some useful emacs snippets. Tested on Windows & Linux with Emacs 27 & 28 (GUI ve
    ```
    (set-frame-font "Microsoft YaHei Mono 12" nil t)
    ```
+7. If you are using Emacs OrgMode clock-in/clock-out features, make sure to set operating system language to English.
 
 ### Side Notes
 
