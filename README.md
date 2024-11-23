@@ -2,6 +2,41 @@
 
 Some useful emacs snippets. Tested on Windows & Linux with Emacs 27 & 28 (GUI version).
 
+## Installation
+
+1. Install [Emacs](https://www.gnu.org/software/emacs/download.html).
+   - Ubuntu
+     ```
+     sudo apt-get install emacs
+     ```
+   - Windows  
+     Download with PowerShell and run the installer:
+     ```
+     wget -O ~/Downloads/emacs-29.4-installer.exe http://mirror.twds.com.tw/gnu/emacs/windows/emacs-29/emacs-29.4-installer.exe
+     ```
+2. Download the init file.
+   - Ubuntu
+     ```
+     wget -O ~/.emacs https://github.com/j3soon/dot-emacs/raw/refs/heads/master/.emacs
+     ```
+   - Windows
+     ```
+     wget -O ~/AppData/Roaming/.emacs https://github.com/j3soon/dot-emacs/raw/refs/heads/master/.emacs
+     ```
+3. Set up `Dark Solarized Theme` according to the instructions below.
+4. Set up `Microsoft YaHei Mono Font 12pt` according to the instructions below.
+5. Open Emacs and wait for installation
+6. Open `.emacs` and comment out the following for fast startup:
+   ```
+   ;; (package-refresh-contents)
+   ```
+   If you're on Windows, uncomment the following:
+   ```
+   (set-frame-font "Microsoft YaHei Mono 12" nil t)
+   ```
+
+### Side Notes
+
 You can locate your init file by:
 
 ```
@@ -9,6 +44,8 @@ M-x describe-variable RET user-init-file RET
 ```
 
 Ref: https://www.emacswiki.org/emacs/InitFile
+
+> The following are description of individual files
 
 ## [Dot Emacs](.emacs)
 
