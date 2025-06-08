@@ -29,6 +29,9 @@
 ;; Inhibit Start Up Message
 (setq inhibit-startup-message t)
 
+;; Set default coding system to UTF-8
+(prefer-coding-system 'utf-8)
+
 ;; Activate OrgMode
 (global-set-key (kbd "C-c l") #'org-store-link)
 (global-set-key (kbd "C-c a") #'org-agenda)
