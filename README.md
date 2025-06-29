@@ -1,6 +1,10 @@
 # Emacs Init File (Dot Emacs)
 
-Some useful emacs snippets. Tested on Windows & Linux with Emacs 27 & 28 (GUI version).
+Some useful emacs snippets.
+
+Last tested on:
+- Emacs 30.1 (GUI version) on Windows 11
+- Emacs 27 & 28 (GUI version) on Ubuntu 22.04
 
 ## Installation
 
@@ -140,6 +144,18 @@ Potential Improvements (Single `q` to quit): https://www.mail-archive.com/emacs-
 ```sh
 emacs --debug-init
 ```
+
+## Performance Profling
+
+Older versions of Emacs may have performance issues when editing large files. Consider updating to the latest Emacs.
+
+```
+M-x profiler-start RET RET
+# perform actions
+M-x profiler-report
+```
+
+Ref: https://emacs.stackexchange.com/a/5438
 
 ## Potential Improvement References
 

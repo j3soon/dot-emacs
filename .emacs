@@ -37,6 +37,9 @@
 (global-set-key (kbd "C-c a") #'org-agenda)
 (global-set-key (kbd "C-c c") #'org-capture)
 
+;; OrgMode collapse upon start up
+(setq org-startup-folded t)
+
 ;; Change entry state based on child
 (defun org-summary-todo (n-done n-not-done)
   "Switch entry to DONE when all subentries are done, to TODO otherwise."
